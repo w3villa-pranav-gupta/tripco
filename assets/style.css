@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif; 
   font-weight: bolder;
 }
 .wrapper-class {
@@ -295,16 +295,16 @@ nav ul li a:hover {
   color: white;
   background: #007bff;
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 #numberone {
-  background: #45d6e9;
+  background: #04c9a8;
 }
 #numbertwo {
-  background: #425af0;
+  background: #1932d6;
 }
 #numberthree {
-  background: #3efb90;
+  background: #b6cd0c;
 }
 .explore-btn {
   margin-top: 20px;
@@ -605,7 +605,10 @@ nav ul li a:hover {
 }
 
 .footer ul li a:hover {
-  color: #007bff;
+  color: #02bed7;
+}
+.subscribe:hover{
+  color: #02bed7;
 }
 
 .newsletter {
