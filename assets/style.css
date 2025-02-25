@@ -859,7 +859,7 @@ nav ul li a:hover {
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     text-align: left;
     z-index: 3;
-    height: 130px;
+    height: auto;
   }
   .tabs {
     display: flex;
@@ -882,18 +882,21 @@ nav ul li a:hover {
   }
   .search-fields {
     display: flex;
-    /* flex-wrap: wrap; */
-    /* flex-direction: row; */
-    gap: 3px;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    /* grid-template-columns: repeat(2, 1fr); Two columns */
+    gap: 8px;
     align-items: center;
+    padding: 10px;
+    /* border: 2px solid black; */
   }
   .field {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 48%;
   }
   .field label {
-    font-size: 8px;
+    font-size: 10px;
     color: gray;
     margin-bottom: 5px;
   }
@@ -911,11 +914,11 @@ nav ul li a:hover {
     display: flex;
     /* align-items: center; */
     background: #f9f9f9;
-    padding: 8px;
+    padding: 5px;
     border-radius: 10px;
     border: 1px solid #ddd;
     font-family: "Poppins", sans-serif;
-    width: 50px;
+    width: 130px;
     height: 25px;
   }
 
@@ -930,12 +933,22 @@ nav ul li a:hover {
     border: none;
     background: transparent;
     outline: none;
-    font-size: 8px;
+    font-size: 10px;
     width: 100%;
   }
   .search-fields {
     padding: 10px 10px 10px 10px;
+    /* border: 2px solid black; */
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-wrap: wrap; */
   }
+  /* .searchone{
+    display: flex;
+  }
+  .searchtwo{
+    display: flex;
+  } */
   .custom-line {
     width: 90%;
     height: 2px;
@@ -944,10 +957,10 @@ nav ul li a:hover {
   }
 
   .search-btn {
-    font-size: 8px;
+    font-size: 10px;
     background: #02bed7;
     color: white;
-    padding: 2px 3px;
+    padding: 1px 1px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -955,12 +968,14 @@ nav ul li a:hover {
     align-items: center;
     gap: 2px;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5px;
     height: 30px;
     width: 100px;
+    margin-left:70px
+    
   }
   .search-btn i {
-    font-size: 8px;
+    font-size: 10px;
   }
   /* banner section ends here */
   /*popular places section starts here*/
@@ -1186,17 +1201,17 @@ nav ul li a:hover {
   }
   .review-1 {
     top: 10%;
-    left: -15%;
+    left: -6%;
   }
 
   .review-2 {
     top: 40%;
-    right: -15%;
+    right: -6%;
   }
 
   .review-3 {
     bottom: 10%;
-    left: -15%;
+    left: -6%;
   }
   .beforethird {
     display: flex;
@@ -1318,6 +1333,10 @@ nav ul li a:hover {
   .imgdiv {
     position: relative;
   }
+  .sixth{
+    padding-top: 0px;
+    padding-bottom: 00px;
+  }
   .rating {
     position: absolute;
     top: 15px;
@@ -1339,8 +1358,8 @@ nav ul li a:hover {
 
   /* adventure section starts here  */
   .fifth {
-    padding-top: 30px;
-    height: 400px;
+    padding-top: 0px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1351,7 +1370,7 @@ nav ul li a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 350px;
+    height: 150px;
   }
   .h1div {
     font-size: 15px;
@@ -1369,7 +1388,7 @@ nav ul li a:hover {
     /* flex-direction: column; */
     justify-content: space-around;
     height: auto;
-    padding-top: 50px;
+    padding-top: 0px;
     width: 100%;
     gap: 30px;
   }
@@ -2301,6 +2320,7 @@ nav ul li a:hover {
     color: #555;
     font-size: 17px;
     font-weight: bold;
+    line-height: 0.1;
     /* background: #000; */
   }
   .social-icons a i {
@@ -2317,8 +2337,8 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 25px;
-    /* border: 2px solid black;  */
+    gap: 20px;
+    /* border: 2px solid rgb(152, 34, 34);  */
     width: 100%;
     height: 100%;
     margin-top: 0px;
@@ -2326,7 +2346,9 @@ nav ul li a:hover {
   .newsletter {
     /* width: 100px; */
     position: relative;
-    /* border: 2px solid black; */
+    /* border: 2px solid rgb(215, 56, 56); */
+    width: 100% !important;
+    
   }
   .newsletter input {
     width: 100%;
@@ -2334,12 +2356,13 @@ nav ul li a:hover {
     border: 1px solid #ddd;
     border-radius: 10px;
     outline: none;
-    font-size: 16px;
+    font-size: 11px;
     border: 1px solid #d0cfcf;
   }
   .newsletter button {
     position: absolute;
-    right: 10px;
+    /* padding-left: 10px; */
+    right: 4%;
     top: 50%;
     transform: translateY(-50%);
     border: none;
@@ -2795,17 +2818,17 @@ nav ul li a:hover {
   }
   .review-1 {
     top: 8%;
-    left: -15%;
+    left: -2%;
   }
 
   .review-2 {
     top: 50%;
-    right: -10%;
+    right: -2%;
   }
 
   .review-3 {
     bottom: 8%;
-    left: -15%;
+    left: -2%;
   }
   .beforethird {
     display: flex;
